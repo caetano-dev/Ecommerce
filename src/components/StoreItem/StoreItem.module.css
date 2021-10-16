@@ -1,0 +1,6 @@
+.storeItem {
+  border: 0.1px solid red;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
