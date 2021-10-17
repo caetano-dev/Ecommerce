@@ -1,10 +1,12 @@
 import "./App.css";
-import ProductList from "./components/ProductList/ProductList";
+import SearchBar from "./components/SearchBar/SearchBar";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <>
-      <ProductList />
+      <Header />
+      <SearchBar />
     </>
   );
 }
