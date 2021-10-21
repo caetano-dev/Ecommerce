@@ -1,4 +1,4 @@
-import { useState, useEffect, React } from "react";
+import { React } from "react";
 import StoreItem from "../StoreItem/StoreItem";
 import styles from "./ProductList.module.css";
 import { Link } from "react-router-dom";
@@ -11,16 +11,22 @@ const ProductList = ({ productList = [] }) => {
         {productList.map((product) => {
           if (product) {
             return (
-              <StoreItem
-                image={
-                  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Capybara_%28Hydrochoerus_hydrochaeris%29.JPG/220px-Capybara_%28Hydrochoerus_hydrochaeris%29.JPG"
-                }
-                id={product._id}
-                name={product.name}
-                price={product.price}
-                company={product.company}
-                rating={product.rating}
-              />
+              <Link
+                to={`/products?name=${product.name}&price=${product.price}&company=${product.company}&rating=${product.rating}`}
+                key={product._id}
+                state={{ name: product.name }}
+              >
+                <StoreItem
+                  image={
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Capybara_%28Hydrochoerus_hydrochaeris%29.JPG/220px-Capybara_%28Hydrochoerus_hydrochaeris%29.JPG"
+                  }
+                  id={product._id}
+                  name={product.name}
+                  price={product.price}
+                  company={product.company}
+                  rating={product.rating}
+                />
+              </Link>
             );
           }
           return null;
