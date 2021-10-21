@@ -1,16 +1,15 @@
 import "./App.css";
-import SearchBar from "./components/SearchBar/SearchBar";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
-import { Route, BrowserRouter, Router } from "react-router-dom";
+import { Route } from "react-router-dom";
+import Products from "./pages/Products/Products";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Header />
-        <Home />
-      </BrowserRouter>
+      <Header />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/products" component={Products} />
     </>
   );
 }
