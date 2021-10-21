@@ -1,6 +1,6 @@
 import styles from "./StoreItem.module.css";
 
-function storeItem({ id, image, name, price, company, rating }) {
+const storeItem = ({ id, image, name, price, company, rating }) => {
   return (
     <div className={styles.storeItem}>
       <div key={id}>
@@ -12,5 +12,5 @@ function storeItem({ id, image, name, price, company, rating }) {
       </div>
     </div>
   );
-}
+};
 export default storeItem;

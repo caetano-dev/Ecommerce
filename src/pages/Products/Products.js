@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
-function Products() {
+const Products = () => {
   const RouteParams = useLocation().search;
   const name = new URLSearchParams(RouteParams).get("name");
   const price = new URLSearchParams(RouteParams).get("price");
@@ -18,6 +18,6 @@ function Products() {
       <p>{rating}</p>
     </div>
   );
-}
+};
 
 export default Products;
