@@ -1,6 +1,5 @@
-import { useState, useEffect, createRef, React } from "react";
+import React from "react";
 import styles from "./SearchBar.module.css";
-import { Route, BrowserRouter } from "react-router-dom";
 
 const SearchBar = () => {
   return (
