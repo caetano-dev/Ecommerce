@@ -2,3 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+.title {
+  padding-left: 1.5rem;
+}

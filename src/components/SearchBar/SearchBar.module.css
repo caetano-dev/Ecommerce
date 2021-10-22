@@ -1,0 +1,10 @@
+.searchBar {
+  padding: 1.5rem;
+}
+.searchBar input {
+  width: 20rem;
+  height: 2rem;
+}
+.searchBar button {
+  height: 2.4rem;
+}

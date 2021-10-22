@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 const ProductList = ({ productList = [] }) => {
   return (
-    <>
-      <h1>Our products:</h1>
+    <div>
+      <h1 className={styles.title}>Our products:</h1>
       <div className={styles.productList}>
         {productList.map((product) => {
           if (product) {
@@ -32,7 +32,7 @@ const ProductList = ({ productList = [] }) => {
           return null;
         })}
       </div>
-    </>
+    </div>
   );
 };
 

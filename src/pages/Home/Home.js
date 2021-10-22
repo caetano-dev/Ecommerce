@@ -8,7 +8,7 @@ const Home = () => {
   const searchQuery = useLocation().search;
 
   const fetchData = async () => {
-    return await fetch("http://localhost:8080/api/v1/products" + searchQuery)
+    return await fetch(process.env.REACT_APP_SERVER + searchQuery)
       .then((response) => response.json())
       .then((data) => {
         setProductList(data.products);

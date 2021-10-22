@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import styles from "./Products.module.css";
 
 const Products = () => {
   const RouteParams = useLocation().search;
@@ -9,9 +10,11 @@ const Products = () => {
   const rating = new URLSearchParams(RouteParams).get("rating");
 
   return (
-    <div>
-      <h1>Products</h1>
-      <img src="" alt="product image" />
+    <div className={styles.Product}>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Capybara_%28Hydrochoerus_hydrochaeris%29.JPG/220px-Capybara_%28Hydrochoerus_hydrochaeris%29.JPG"
+        alt="product image"
+      />
       <h1>{name}</h1>
       <p>{price}</p>
       <p>{company}</p>

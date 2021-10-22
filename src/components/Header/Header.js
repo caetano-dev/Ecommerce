@@ -1,9 +1,10 @@
 import React from "react";
+import styles from "./Header.module.css"
 
 const Header = () => {
   return (
-    <header>
-      <h1>Ecommerce</h1>
+    <header className={styles.header}>
+      <h1>React Ecommerce</h1>
     </header>
   );
 };
