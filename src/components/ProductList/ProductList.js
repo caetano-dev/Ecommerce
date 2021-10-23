@@ -18,7 +18,7 @@ const ProductList = ({ productList = [] }) => {
               >
                 <StoreItem
                   image={
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Capybara_%28Hydrochoerus_hydrochaeris%29.JPG/220px-Capybara_%28Hydrochoerus_hydrochaeris%29.JPG"
+                    "https://picsum.photos/200/200"
                   }
                   id={product._id}
                   name={product.name}

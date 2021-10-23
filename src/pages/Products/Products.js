@@ -12,13 +12,15 @@ const Products = () => {
   return (
     <div className={styles.Product}>
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Capybara_%28Hydrochoerus_hydrochaeris%29.JPG/220px-Capybara_%28Hydrochoerus_hydrochaeris%29.JPG"
+        src="https://picsum.photos/500/400"
         alt="product image"
       />
-      <h1>{name}</h1>
-      <p>{price}</p>
-      <p>{company}</p>
-      <p>{rating}</p>
+      <div>
+        <h1>{name}</h1>
+        <p>{company}</p>
+        <p>Price: ${price}</p>
+        <p>{rating} stars</p>
+      </div>
     </div>
   );
 };
